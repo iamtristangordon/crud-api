@@ -9,11 +9,11 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 
-mongoose.connect('mongodb://localhost/resthub');
+mongoose.connect('mongodb://localhost/mll-api');
 
 var db = mongoose.connection;
 
-app.get('/', (req, res) => res.send('Hello World with Express'));
+app.get('/', (req, res) => res.send('success'));
 
 let mllRoutes = require("./mll-routes");
 
